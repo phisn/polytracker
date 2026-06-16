@@ -12,6 +12,18 @@ A minimalist macOS menu bar app that tracks [Polymarket](https://polymarket.com)
 Data comes from Polymarket's public Gamma API (discovery/metadata) and CLOB API
 (price history) — no API key or login required.
 
+## Download
+
+Grab `PolyTracker.zip` from the [latest release](https://github.com/phisn/polytracker/releases/latest),
+unzip it, and drag `PolyTracker.app` into `/Applications`. Apple Silicon, macOS 14+.
+
+The app is unsigned, so macOS Gatekeeper blocks it on first launch. Right-click the
+app and choose **Open**, or clear the quarantine flag first:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/PolyTracker.app
+```
+
 ## Build & run
 
 Requires macOS 14+ and a Swift 6 toolchain (ships with Xcode 16 / recent Command
