@@ -1,0 +1,5 @@
+.build/
+/PolyTracker.app/
+.DS_Store
+*.xcodeproj
+.swiftpm/
